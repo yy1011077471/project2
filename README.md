@@ -1,4 +1,4 @@
 |  #  | Project                                                                                                                     | Live Demo                                                                         |
 | :-: | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| 01  | [Expanding Cards](https://https://github.com/yy1011077471/project2/tree/main/%E7%AC%AC%E4%B8%80%E5%A4%A9%E6%89%A9%E5%B1%95%E5%8D%A1%E7%89%87)                             | [Live Demo](https://50projects50days.com/projects/expanding-cards/)               |
+| 01  | [Expanding Cards](https://https://github.com/yy1011077471/project2/tree/main/第一天扩展卡片)                             | [Live Demo](https://50projects50days.com/projects/expanding-cards/)               |
 
