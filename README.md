@@ -1,5 +1,4 @@
 |  #  | Project                                                                                                                     | Live Demo                                                                         |
 | :-: | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| 01  | [Expanding Cards](https://github.com/bradtraversy/50projects50days/tree/master/expanding-cards)                             | [Live Demo](https://50projects50days.com/projects/expanding-cards/)               |
-| 02  | [Progress Steps](https://github.com/bradtraversy/50projects50days/tree/master/progress-steps)                               | [Live Demo](https://50projects50days.com/projects/progress-steps/)                |
-| 03  | [Rotating Navigation Animation](https://github.com/bradtraversy/50projects50days/tree/master/rotating-nav-animation)                       | [Live Demo](https://50projects50days.com/projects/rotating-navigation-animation/) 
+| 01  | [Expanding Cards](https://https://github.com/yy1011077471/project2/tree/main/%E7%AC%AC%E4%B8%80%E5%A4%A9%E6%89%A9%E5%B1%95%E5%8D%A1%E7%89%87)                             | [Live Demo](https://50projects50days.com/projects/expanding-cards/)               |
+
