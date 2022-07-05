@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* 元素的总高度和宽度包含内边距和边框 */
+}
+body {
+    font-family:  sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* 可视的高度 */
+    overflow: hidden;
+    margin: 0;
+}
+.box {
+    display:flex;
+    width: 90vw;
+}
+.A {
+    background-size: cover; /* 将背景图像等比缩放到完全覆盖容器，背景图像有可能超出容器 */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;/* 设置光标形状为小手 */
+    flex: 0.5;/* 复合属性。设置或检索弹性盒模型对象的子元素如何分配空间 */
+    margin: 10px;
+    position: relative;
+   transition: all 700ms ease-in;/* 检索或设置对象变换时的过渡 */
+}
+.A h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;/* 检索或设置对象的不透明度 */
+}
+.A.B{
+    flex: 5;
+}
+.A.B h3 {
+    opacity:1;
+    transition: opacity 0.3s ease-in 0.4s;
+  }
+
+  @media (max-width: 480px) {/* 响应式布局 */
+    .container {
+      width: 100vw;/* 当屏幕不超过480的时候由90变成100 */
+    }
+  
+    .A:nth-of-type(4),
+    .A:nth-of-type(5) {
+      display: none;
+    }/* 第4个和第5个不显示 */
+  }
