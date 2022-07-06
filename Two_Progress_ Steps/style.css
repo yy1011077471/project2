@@ -1,0 +1,79 @@
+:root {
+    --line--boder--fill:#3498db;
+    --line--boder--empty:#e0e0e0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f6f7f6;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    text-align: center;
+   
+}
+.progress-container {
+    display: flex;
+    justify-content: space-between;/* 两端的元素靠边 */
+    align-items: center;
+    margin-bottom: 30px;
+    width: 350px;
+    position: relative;
+}
+.progress-container::before{
+    content: '';
+    background-color: var( --line--boder--empty);
+    height: 4px;
+    width: 95%;
+    position: absolute;
+    z-index: -1;
+}
+.progress {
+    background-color: var(--line--boder--fill);
+    position: absolute;
+    
+    height: 4px;
+    width: 0%;
+    z-index:-1 ;
+    transition: width 0.3s ease;
+    
+    
+}
+.circle {
+    background-color: #fff;
+    color: #999;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--line--boder--empty);
+    transition: width 0.5s ease;
+}
+.circle.active {
+    border: 3px solid var(--line--boder--fill);   
+}
+.btn {
+    background-color:  var(--line--boder--fill);
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px 30px;
+    border: 0;
+    font-size: 14px;
+    margin: 5px;
+}
+.btn:active{
+    transform: scale(0.92);
+}
+.btn:disabled {
+    background-color: var(--line--boder--empty);
+    cursor: not-allowed;
+}
