@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* 元素的总高度和宽度包含内边距和边框 */
+}
+body {
+  font-family: sans-serif;
+  background-color: #333;
+}
+.container {
+  background-color: #fafafa;
+  width: 100vw;
+  padding: 50px;
+  min-height:100vh ;
+  transform-origin: top left; /* 旋转原点为左上角 */
+  transition: transform .3s linear;
+}
+/* 给container同时含有.show-nav设置旋转 */
+.container.show-nav {
+  transform: rotate(-20deg);
+}
+.circle {
+  position: relative;
+  background-color: #ff7979;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: transform .3s linear;
+}
+/* 当container有show-nav类名的时候circle才发生旋转 */
+.container.show-nav.circle {
+  transform: rotate(-70deg);
+
+}
+.circle button {
+  cursor: pointer;/* 鼠标放上去变成小手 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  background-color: transparent;
+  height: 100px;/* 设置圆心的一半（用于旋转） */
+  font-size: 25px;
+  border: 0;
+}
+
+.circle-container {
+  position: fixed;/* 脱离标准流 固定定位 */
+  top: -100px;
+  left: -100px;
+}
+.circle button#open{
+  left: 60%;
+}
+.circle button#close {
+  transform-origin: top left;/* 旋转中心在左上角 */
+  transform: rotate(20deg);
+}
+.content {
+  max-width: 1000px;
+  margin: 50px auto;
+}
+.content p {
+  color: #333;
+  line-height: 1.5;
+}
+.content small {
+  color: #555;
+  font-style: italic;/* 作者名字斜体 */
+}
+.content h3 {
+  margin: 20px 0;
+}
+.content img {
+  max-width: 100%;
+}
+nav {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  z-index: 100;
+}
+nav a{
+  color: #fafafa;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+a:hover {
+  color: rgb(230, 86, 198);
+}
+/* containe 与nav 是兄弟关系所有使用+*/
+.container.show-nav+nav li {
+  transform:translate(0) ;/* 回到原位 */
+  transition: 0.3s;
+
+
+}
+nav ul {
+  list-style-type: none;
+  padding-left: 30px;
+}
+nav ul li i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+nav li {
+  list-style: none;
+  transform: translateX(-100%);/* 向x轴移动 */
+  margin: 40px 0;
+  color: white;
+  transition: transform 0.3s ease-in 0;
+}
+nav li:nth-child(2) {
+  margin-left: 15px;
+  transform: translateX(-150%);
+}
+nav li:nth-child(3) {
+  margin-left: 30px;
+  transform: translateX(-200%);
+}
