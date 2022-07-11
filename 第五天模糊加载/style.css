@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+.bg {
+  background: url(img/阳光沙滩.png) no-repeat center/cover;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+.Text {
+  font-size: 50px;
+  color: #fff;
+}
